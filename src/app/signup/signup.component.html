@@ -1,0 +1,13 @@
+<div class = "container">
+  <div class = "signup">sign up</div>
+  <div class = "inputs">
+    <input type = "text" placeholder = "Username" [(ngModel)]="this.signup_user.user_name" id="user">
+    <input type = "email" placeholder = "E-mail" [(ngModel)]="this.signup_user.user_mail" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id = 'mail'>
+    <input [type] = 'this.showPassword ? "text" : "password"' placeholder = "Password" [(ngModel)]="this.signup_user.user_password" id = "password">
+    <i [class] = 'this.showPassword ? "fa-solid fa-eye password" : "fa-solid fa-eye-slash password"' (click) = "toggleShow()"></i>
+    <input [type] = 'this.showConfirmedPassword ? "text" : "password"' placeholder = "Confirm Password">
+    <i [class] = 'this.showConfirmedPassword ? "fa-solid fa-eye confirm-password" : "fa-solid fa-eye-slash confirm-password"' (click) = "toggleShowConfirmed()"></i>
+  </div>
+  <button (click) = "createUser()" id = "create">create account</button>
+  <button id = "login" routerLink = "/login">Log in</button>
+</div>

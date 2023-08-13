@@ -1,0 +1,93 @@
+@import "src/app/colors.scss";
+
+.container {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 90%;
+  border-radius: 80px;
+  background-color: $bg-blue;
+  & .signup{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 90%;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  & .inputs {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 90%;
+    & input {
+      position: relative;
+      border: none;
+      border-bottom: 1px solid white;
+      width: 100%;
+      outline: none;
+      font-size: 22px;
+      padding: 10px;
+      margin-bottom: 30px;
+      background-color: $bg-blue;
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+    }
+    & .password {
+      position: absolute;
+      top: 55%;
+      right: 2%;
+      color: white;
+      font-size: 22px;
+    }
+    & .confirm-password{
+      position: absolute;
+      top: 80%;
+      right: 2%;
+      color: white;
+      font-size: 22px;
+    }
+  }
+  & #create {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 90%;
+    height: 8%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: $bg-blue;
+    font-size: 22px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: lightgrey;
+      color: white;
+      scale: 1.02;
+    }
+  }
+  & #login {
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    height: 8%;
+    width: 90%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: $bg-blue;
+    font-size: 22px;
+    &:hover {
+      background-color: lightgrey;
+      color: white;
+      scale: 1.02;
+    }
+  }
+}

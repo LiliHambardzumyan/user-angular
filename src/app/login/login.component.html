@@ -1,0 +1,18 @@
+<div class = "container">
+  <div class = "circle">
+    <i class = "fa-regular fa-user"></i>
+  </div>
+  <div class = "info">
+    <input type = "text" placeholder = "Username" id = "text" [(ngModel)]="this.login_user.user_name">
+      <input [type] = 'this.showPassword ? "text" : "password"' placeholder = "Password" class = "password" [(ngModel)]="this.login_user.user_password">
+      <i [class] = 'this.showPassword ? "fa-solid fa-eye pass" : "fa-solid fa-eye-slash pass"' (click) = "toggleShow()"></i>
+    <div class = "checkbox">
+      <input type = "checkbox" (click) = "rememberUser()"> Remember me
+    </div>
+  </div>
+  <button id = "login" (click) = "loginUser()">Log In</button>
+  <button id = "register" routerLink = "/register">Register</button>
+  <div class = "forget">
+    <a routerLink = "/recover-password">Forgot password?</a>
+  </div>
+</div>

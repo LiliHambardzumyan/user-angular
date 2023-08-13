@@ -1,0 +1,111 @@
+@import "src/app/colors.scss";
+
+.container {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 90%;
+  border-radius: 80px;
+  border: 3px solid $txt-grey;
+
+  & .change{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 90%;
+    color: $bg-blue;
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  & .inputs {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    width: 90%;
+      & input {
+        position: relative;
+        border: none;
+        border-bottom: 1px solid $bg-blue;
+        width: 100%;
+        outline: none;
+        font-size: 22px;
+        padding: 10px;
+        margin-bottom: 30px;
+        color: $bg-blue;
+        &::placeholder {
+          color: $txt-grey;
+        }
+    }
+    & .password {
+      position: absolute;
+      top: 10%;
+      right: 3%;
+      color: $bg-blue;
+      font-size: 22px;
+    }
+    & .confirm-password{
+      position: absolute;
+      top: 60%;
+      right: 3%;
+      color: $bg-blue;
+      font-size: 22px;
+    }
+  }
+  & #change {
+    position: absolute;
+    bottom: 29%;
+    left: 5%;
+    width: 90%;
+    height: 8%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: $bg-blue;
+    color: white;
+    font-size: 22px;
+    &:hover {
+      background-color: lightgrey;
+      color: white;
+      scale: 1.02;
+    }
+  }
+  & #register {
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    width: 90%;
+    height: 8%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: $bg-blue;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: lightgrey;
+      color: white;
+      scale: 1.02;
+    }
+  }
+  & #login {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    height: 8%;
+    width: 90%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: $bg-blue;
+    color: white;
+    font-size: 22px;
+    &:hover {
+      background-color: $txt-grey;
+      color: white;
+      scale: 1.02;
+    }
+  }
+}

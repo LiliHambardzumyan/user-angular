@@ -1,0 +1,122 @@
+@import "src/app/colors.scss";
+
+.container {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 90%;
+  border: 3px solid $txt-grey;
+  border-radius: 80px;
+
+    & .circle {
+      position: absolute;
+      left: 28%;
+      top: 10%;
+      background-color:$bg-blue;
+      height: 30%;
+      width: 44%;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  & .fa-regular {
+    position: absolute;
+    left: calc(50% - 74px);
+    top: calc(50% - 57px);
+    font-size: 170px;
+    color: white;
+  }
+  & .info {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+
+    & #text, .password {
+      position: relative;
+      border: none;
+      border-bottom: 1px solid $bg-blue;
+      width: 100%;
+      outline: none;
+      font-size: 22px;
+      padding: 10px;
+      margin-bottom: 30px;
+      color: $bg-blue;
+      &::placeholder {
+        color: $txt-grey;
+      }
+    }
+      & .pass {
+        position: absolute;
+        top: 53%;
+        right: 3%;
+        color: $bg-blue;
+        font-size: 22px;
+      }
+    & .checkbox{
+      color: $txt-grey;
+      font-size: 22px;
+      & input {
+        accent-color: $bg-blue;
+        cursor: pointer;
+        position: relative;
+        height: 15px;
+        width: 16px;
+        opacity: 0.8;
+      }
+    }
+  }
+  & #login {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 90%;
+    height: 8%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: $bg-blue;
+    color: white;
+    font-size: 22px;
+      &:hover {
+        background-color: $txt-grey;
+        color: white;
+        scale: 1.02;
+      }
+  }
+  & #register {
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    height: 8%;
+    width: 90%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: $bg-blue;
+    color: white;
+    font-size: 22px;
+      &:hover {
+        background-color: $txt-grey;
+        color: white;
+        scale: 1.02;
+      }
+  }
+  & .forget {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+      & a {
+        color: $bg-blue;
+        text-decoration: none;
+        &:hover {
+          color: $txt-grey;
+          transform: scale(1.5)
+        }
+      }
+  }
+
+}

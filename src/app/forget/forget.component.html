@@ -1,0 +1,12 @@
+<div class = "container">
+  <div class = "change">change password</div>
+  <div class = "inputs">
+      <input [type] = 'this.showPassword ? "text" : "password"' placeholder = "New Password">
+      <i [class] = 'this.showPassword ? "fa-solid fa-eye password" : "fa-solid fa-eye-slash password"' (click) = "toggleShow()"></i>
+      <input [type] = 'this.showConfirmedPassword ? "text" : "password"' placeholder = "Confirm Password">
+      <i [class] = 'this.showConfirmedPassword ? "fa-solid fa-eye confirm-password" : "fa-solid fa-eye-slash confirm-password"' (click) = "toggleShowConfirmed()"></i>
+  </div>
+  <button id = "change" routerLink = "/login">Change Password</button>
+  <button id = "register" routerLink = "/register">create account</button>
+  <button id = "login" routerLink = "/login">Log in</button>
+</div>
